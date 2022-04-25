@@ -1,0 +1,7 @@
+lista de libros
+<button><a href="/books/create">Nuevo Libro</a></button>
+{{#each data}}
+    <h2>{{title}}</h2>
+    <p>{{author}}</p>
+    <a href="books/{{id}}">See details</a>
+{{/each}}
