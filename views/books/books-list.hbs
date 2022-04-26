@@ -3,5 +3,9 @@ lista de libros
 {{#each data}}
     <h2>{{title}}</h2>
     <p>{{author}}</p>
-    <a href="books/{{id}}">See details</a>
+    <a href="books/{{_id}}">See details</a>
+    <a href="books/{{_id}}/edit">Edit</a>
+    <form action="/books/{{_id}}/delete" method="POST">
+      <button>Delete</button>
+    </form>
 {{/each}}

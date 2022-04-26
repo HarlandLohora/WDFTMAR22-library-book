@@ -27,7 +27,7 @@ app.locals.appTitle = `Library P`;
 
 
 const books = require("./routes/book.routes");
-console.log(books)
+//console.log(books)
 
 app.use("/", books)
 
